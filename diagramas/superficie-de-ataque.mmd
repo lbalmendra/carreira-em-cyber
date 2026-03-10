@@ -1,1 +1,21 @@
+```mermaid
+graph TD
 
+Developer --> GitRepo
+GitRepo --> CI/CD
+CI/CD --> ArtifactRepo
+ArtifactRepo --> Container
+Container --> CloudRuntime
+
+ExternalAttacker --> API
+ExternalAttacker --> WebApp
+ExternalAttacker --> CI/CD
+
+Dependencies --> GitRepo
+OpenSource --> Dependencies
+MaliciousPackage --> Dependencies
+
+Secrets --> GitRepo
+Secrets --> CI/CD
+Secrets --> CloudRuntime
+```
