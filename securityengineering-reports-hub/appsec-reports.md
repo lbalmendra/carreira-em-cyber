@@ -9,15 +9,13 @@
 
 Curadoria de **relatórios estratégicos sobre Application Security, DevSecOps, API Security e Software Supply Chain**.
 
-Este repositório foi criado para ajudar:
+Este repositório ajuda a acompanhar **tendências reais de segurança em software** e foi idealizado para:
 
 - Security Engineers
 - AppSec Leaders
 - DevSecOps Engineers
 - CISOs
 - Pesquisadores de segurança
-
-a acompanhar **tendências reais de segurança em software**.
 
 ---
 
