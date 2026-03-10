@@ -1,21 +1,21 @@
 ```mermaid
 graph TD
 
-Developer --> GitRepo
-GitRepo --> CI/CD
-CI/CD --> ArtifactRepo
-ArtifactRepo --> Container
-Container --> CloudRuntime
+Developer[Developer] --> GitRepo[Git Repository]
+GitRepo --> CICD[CI Pipeline]
+CICD --> ArtifactRepo[Artifact Repository]
+ArtifactRepo --> Container[Container Image]
+Container --> CloudRuntime[Cloud Runtime]
 
-ExternalAttacker --> API
-ExternalAttacker --> WebApp
-ExternalAttacker --> CI/CD
+ExternalAttacker[External Attacker] --> API[API]
+ExternalAttacker --> WebApp[Web Application]
+ExternalAttacker --> CICD
 
-Dependencies --> GitRepo
-OpenSource --> Dependencies
-MaliciousPackage --> Dependencies
+Dependencies[Dependencies] --> GitRepo
+OpenSource[Open Source Packages] --> Dependencies
+MaliciousPackage[Malicious Package] --> Dependencies
 
-Secrets --> GitRepo
-Secrets --> CI/CD
+Secrets[Secrets] --> GitRepo
+Secrets --> CICD
 Secrets --> CloudRuntime
 ```
